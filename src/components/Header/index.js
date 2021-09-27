@@ -11,38 +11,38 @@ const Header = ({ data }) => {
   return (
     <div>
       <div className="row">
-        <div className="col-lg-10">
+        <div className="col-lg-9">
           {data.length > 0 &&
             data.map((d) => (
-              <div className="row" key={d.id} style={{ paddingBottom: "10px" }}>
-                <div className="col-lg-3">
-                  <TitleCard data={d.first_box} />
-                </div>
-                <div className="col-lg-2">
-                  <DataCard data={d.second_box} />
-                </div>
-                <div className="col-lg-3">
-                  <MarketCard data={d.third_box} />
-                </div>
-                <div className="col-lg-3">
-                  <RealizedCard data={d.fourth_box} />
-                </div>
-                <div className="col-lg-1">
-                  <div className="d-flex flex-column">
-                    <div style={{ marginTop: "10px" }}>
-                      <CustomButton label={`BUY`} />
-                    </div>
-                    <div style={{ marginTop: "10px" }}>
-                      <CustomButton label={`SELL`} />
-                    </div>
+              <div
+                className="d-flex header-card"
+                key={d.id}
+                style={{
+                  marginBottom: "10px",
+                  width: "100%",
+                  boxShadow: "0 2px 3px -1px rgba(0, 0, 0, 0.25)",
+                }}
+              >
+                <TitleCard data={d.first_box} />
+                <DataCard data={d.second_box} />
+                <MarketCard data={d.third_box} />
+                <RealizedCard data={d.fourth_box} />
+                <div
+                  className="d-flex flex-column justify-content-between button-card"
+                  style={{ width: "10%", paddingRight: "10px" }}
+                >
+                  <div style={{ marginTop: "10px" }}>
+                    <CustomButton label={`BUY`} />
+                  </div>
+                  <div style={{ marginBottom: "10px",marginTop:'5px' }}>
+                    <CustomButton label={`SELL`} />
                   </div>
                 </div>
               </div>
             ))}
-         
         </div>
-        <div className="col-lg-2">
-          <CustomChart/>
+        <div className="col-lg-3">
+          <CustomChart />
         </div>
       </div>
     </div>

@@ -1,8 +1,9 @@
 import React from "react";
+import "./style.css";
 
 const MarketCard = ({ data }) => {
   return (
-    <div className="p-2 d-flex flex-column justify-content-center" style={{ height: "100%", background: "#F3F3F3" }}>
+    <div className="p-2 d-flex flex-column justify-content-center title-card" style={{ height: "120px",width:'20%', background: "#F3F3F3",marginRight:'5px' }}>
       <div className="d-flex">
         <span style={{  fontSize: "12px", fontWeight: "500"}}>Market Value</span>
         <span style={{ fontSize: "12px", fontWeight: "500",marginLeft:'10px' }}>${data.market_value}</span>

@@ -12,7 +12,7 @@ import {
   FaCaretDown,
 } from "react-icons/fa";
 
-import "./chart.css";
+import "./style.css";
 
 const CustomChart = ({ data }) => {
   const [mutualFund, setMututalFund] = useState(0);
@@ -39,19 +39,13 @@ const CustomChart = ({ data }) => {
   }, []);
   return (
     <div className="d-flex flex-column">
-      {/* <div className="d-flex align-items-center justify-content-between" style={{marginBottom:'10px'}}>
-        <span style={{ fontSize: "12px", fontWeight: "bold" }}>Portfolio</span>
-        <span>
-          Assetwise
-          <FaExpandArrowsAlt />
-        </span>
-      </div> */}
+     
       <div style={{ marginTop: "10px" }}>
         <div
           className="d-flex align-items-center justify-content-between"
           style={{ marginBottom: "10px" }}
         >
-          <span style={{ fontSize: "12px", fontWeight: "bold" }}>
+          <span style={{ fontSize: "16px", fontWeight: "bold" }}>
             Portfolio
           </span>
           <span>
@@ -61,19 +55,19 @@ const CustomChart = ({ data }) => {
         </div>
         <DonutChart
           className="dchart"
-          width={200}
+          width={300}
           height={250}
           innerRadius={0.9}
           selectedOffset={0}
           outerRadius={0.7}
-          colors={["#0A95FF", "#367F2E"]}
+          colors={["#0A95FF", "#466D1D"]}
           data={[
             {
               label: "MF",
               value: mutualFund,
             },
             {
-              label: "ET",
+              label: "ETFs",
               value: etFund,
             },
           ]}

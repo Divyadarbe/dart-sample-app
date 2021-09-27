@@ -6,16 +6,17 @@ import {
   FaIntercom,
   FaGgCircle,
 } from "react-icons/fa";
+import "./style.css";
 
 const DataCard = ({ data }) => {
   return (
     <div
-      className="d-flex align-items-center p-2"
-      style={{ height: "100%", background: "#F3F3F3" }}
+      className="d-flex align-items-center p-2 title-card"
+      style={{ height: "120px", background: "#F3F3F3",marginLeft:'5px',marginRight:'5px',width:'20%' }}
     >
       <div className="d-flex flex-column" style={{ paddingRight: "5px" }}>
         <span style={{ color: "gray", fontSize: "12px", fontWeight: "500" }}>
-          <FaLastfmSquare color="grey" style={{ marginRight: "3px" }} />{" "}
+          <FaLastfmSquare color="grey"  />{" "}
           Quantity
         </span>
         <span

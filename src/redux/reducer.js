@@ -63,7 +63,7 @@ const initialState = {
       avg_cost: 25.4,
       invested_amount: "8,509.00",
       portfolio_value: 10.46,
-      unrealized: "-",
+      unrealized: "$-",
       return: 0.0,
     },
   ],

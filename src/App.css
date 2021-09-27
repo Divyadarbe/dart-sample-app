@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+@media all and (max-width: 968px) {
+  .app-card{
+    overflow: auto !important;
+  }
+}
