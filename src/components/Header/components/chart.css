@@ -1,0 +1,16 @@
+.dchart-innertext-value {
+  display: none;
+}
+.dchart-legend {
+  border: 1px solid black !important;
+}
+.progress-middle .progress-bar {
+    position: relative;
+    left: 50%;
+}
+.progress-middle1 .progress-bar1 {
+    position: relative;
+    /* left: 65%; */
+margin-left: -25%;
+    
+}
