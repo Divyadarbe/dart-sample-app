@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaCaretDown, FaCaretUp, FaExclamationTriangle } from "react-icons/fa";
 import "./style.css";
 
@@ -48,30 +48,34 @@ const RealizedCard = ({ data }) => {
           {data.return}%
         </span>
       </div>
-      <div>
-        {data.return > 0 ? (
-          <div className="progress progress-middle">
-            <div
-              className="progress-bar"
-              role="progressbar"
-              aria-valuenow="50"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style={{ width: `${data.return}%`, background: "green" }}
-            ></div>
-          </div>
-        ) : (
-          <div className="progress progress-middle1">
-            <div
-              className="progress-bar"
-              role="progressbar"
-              // aria-valuenow="100"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style={{ width: `${-data.return}%`, background: "red" }}
-            ></div>
-          </div>
-        )}
+      <div style={{ width: "100%" }} className="d-flex">
+        <div className="progress justify-content-end" style={{ width: "50%" }}>
+          <div
+            className="progress-bar"
+            role="progressbar"
+            style={{
+              width: `${data.return < 0 && -data.return}%`,
+              background: "red",
+            }}
+            aria-valuenow="10"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+
+        <div className="progress" style={{ width: "50%" }}>
+          <div
+            className="progress-bar"
+            role="progressbar"
+            style={{
+              width: `${data.return >= 0 && data.return}%`,
+              background: "green",
+            }}
+            aria-valuenow="10"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
       </div>
     </div>
   );

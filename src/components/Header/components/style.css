@@ -6,21 +6,19 @@
   border: 1px solid black !important;
 }
 
-.progress-middle .progress-bar {
-  position: relative;
-  left: 50%;
+.progress-bar,
+.progress {
+  border: none !important;
+  border-radius: 0% !important;
 }
-.progress-middle1 .progress-bar {
-  position: relative;
-  left: 42%;
-  
-}
+
 .progress-bar,
 .progress-middle,
 .progress-middle1,
 .progress {
   height: 10px;
 }
+
 @media all and (max-width: 968px) {
   .title-card {
     width: 100% !important;
