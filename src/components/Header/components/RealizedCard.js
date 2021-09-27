@@ -39,7 +39,7 @@ const RealizedCard = ({ data }) => {
             textAlign: "right",
           }}
         >
-          {console.log("Data return",data.return >=0,data.return)}
+          {console.log("Data return", data.return >= 0, data.return)}
           {data.return >= 0 ? (
             <FaCaretUp color="green" />
           ) : (
@@ -65,10 +65,10 @@ const RealizedCard = ({ data }) => {
             <div
               className="progress-bar"
               role="progressbar"
-              aria-valuenow="50"
+              // aria-valuenow="100"
               aria-valuemin="0"
               aria-valuemax="100"
-              style={{ width: `${-(data.return)}%`, background: "red" }}
+              style={{ width: `${-data.return}%`, background: "red" }}
             ></div>
           </div>
         )}
