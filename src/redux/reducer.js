@@ -71,47 +71,138 @@ const initialState = {
     {
       id: 1,
       first_box: {
-        text1: "ITOT",
-        price: 283.3,
+        text1: "AADR",
+        price: 50.3,
 
         text4: "S&P 500 Index",
         text5: "US Equity",
       },
       second_box: {
-        quantity: 150,
-        cost: 44.9,
-        invested_amount: 6736.98,
+        quantity: 430,
+        cost: 41.75,
+        invested_amount: 17952.07,
       },
       third_box: {
         market_value: 9542.56,
-        portfolio_value: 40,
+        portfolio_value: 22.06,
       },
       fourth_box: {
-        unrealized: 2805.58,
-        return: 10,
+        unrealized: "$3676.93",
+        return: 20.48,
       },
     },
     {
       id: 2,
       first_box: {
-        text1: "EFA",
-        price: 68.9,
+        text1: "MFEM",
+        price: 23.2,
 
-        text4: "MSCI EAFE Index",
-        text5: "Developed Market Equity",
+        text4: "S&P 500 Index",
+        text5: "US Equity",
       },
       second_box: {
-        quantity: 150,
-        cost: 32.2,
-        invested_amount: 4830.21,
+        quantity: 210,
+        cost: 22.5,
+        invested_amount: 4725.84,
       },
       third_box: {
         market_value: 4121.21,
-        portfolio_value: 20,
+        portfolio_value: 5.81,
       },
       fourth_box: {
-        unrealized: 709,
-        return: -15,
+        unrealized: "$146.16",
+        return: 3.09,
+      },
+    },
+    {
+      id: 3,
+      first_box: {
+        text1: "JPEM",
+        price: 52.5,
+        text4: "MSCI EAFE Index",
+        text5: "Developed Market Equity",
+        // text4: "S&P 500 Index",
+        // text5: "US Equity",
+      },
+      second_box: {
+        quantity: 328,
+        cost: 44.9,
+        invested_amount: 56.7,
+      },
+      third_box: {
+        market_value: 9542.56,
+        portfolio_value: 22.86,
+      },
+      fourth_box: {
+        unrealized: "-$1377.60",
+        return: "-7.41",
+      },
+    },
+    {
+      id: 4,
+      first_box: {
+        text1: "KEMPQ",
+        price: 20.4,
+        text4: "S&P 500 Index",
+        text5: "US Equity",
+      },
+      second_box: {
+        quantity: 801,
+        cost: 22.24,
+        invested_amount: 17811.04,
+      },
+      third_box: {
+        market_value: 9542.56,
+        portfolio_value: 21.89,
+      },
+      fourth_box: {
+        unrealized: "-$1470.64",
+        return: -8.26,
+      },
+    },
+    {
+      id: 5,
+      first_box: {
+        text1: "KLDW",
+        price: 32.9,
+        text4: "S&P 500 Index",
+        text5: "US Equity",
+      },
+      second_box: {
+        quantity: 523,
+        cost: 26.32,
+        invested_amount: 13765.36,
+      },
+      third_box: {
+        market_value: 9542.56,
+        portfolio_value: 16.92,
+      },
+      fourth_box: {
+        unrealized: "$3441.34",
+        return: 25.0,
+      },
+    },
+    {
+      id: 6,
+      first_box: {
+        text1: "KOIN",
+        price: 25.4,
+
+        text4: "S&P 500 Index",
+        text5: "US Equity",
+      },
+      second_box: {
+        quantity: 335,
+        cost: 25.4,
+        invested_amount: 8509,
+      },
+      third_box: {
+        market_value: 9542.56,
+        portfolio_value: 10.46,
+      },
+      fourth_box: {
+        unrealized: 0,
+        return: 0,
       },
     },
   ],

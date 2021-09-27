@@ -1,12 +1,12 @@
 import React from "react";
 import "./style.css";
 
-const MarketCard = ({ data }) => {
+const MarketCard = ({ data,first_box,second_box }) => {
   return (
     <div className="p-2 d-flex flex-column justify-content-center title-card" style={{ height: "120px",width:'20%', background: "#F3F3F3",marginRight:'5px' }}>
       <div className="d-flex">
         <span style={{  fontSize: "12px", fontWeight: "500"}}>Market Value</span>
-        <span style={{ fontSize: "12px", fontWeight: "500",marginLeft:'10px' }}>${data.market_value}</span>
+        <span style={{ fontSize: "12px", fontWeight: "500",marginLeft:'10px' }}>${first_box.price*second_box.quantity}</span>
       </div>
       <div className="d-flex" style={{paddingTop: "5px"}}>
         <span style={{ color: "gray", fontSize: "12px", fontWeight: "500" }}>% of portfolio value</span>

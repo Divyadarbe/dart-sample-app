@@ -25,7 +25,7 @@ const Header = ({ data }) => {
               >
                 <TitleCard data={d.first_box} />
                 <DataCard data={d.second_box} />
-                <MarketCard data={d.third_box} />
+                <MarketCard data={d.third_box} first_box={d.first_box} second_box={d.second_box} />
                 <RealizedCard data={d.fourth_box} />
                 <div
                   className="d-flex flex-column justify-content-between button-card"

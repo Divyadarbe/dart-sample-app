@@ -21,7 +21,7 @@ const RealizedCard = ({ data }) => {
           className="text-right"
           style={{ fontSize: "12px", fontWeight: "500" }}
         >
-          ${data.unrealized}
+          {data.unrealized}
         </span>
       </div>
       <div
@@ -39,12 +39,13 @@ const RealizedCard = ({ data }) => {
             textAlign: "right",
           }}
         >
-          {data.return > 0 ? (
+          {console.log("Data return",data.return >=0,data.return)}
+          {data.return >= 0 ? (
             <FaCaretUp color="green" />
           ) : (
             <FaCaretDown color="red" />
           )}
-          {data.return > 0 ? data.return : "15"}%
+          {data.return}%
         </span>
       </div>
       <div>
@@ -67,7 +68,7 @@ const RealizedCard = ({ data }) => {
               aria-valuenow="50"
               aria-valuemin="0"
               aria-valuemax="100"
-              style={{ width: `15%`, background: "red" }}
+              style={{ width: `${-(data.return)}%`, background: "red" }}
             ></div>
           </div>
         )}
